@@ -1,0 +1,189 @@
+# Colors
+
+Here’s a **complete color documentation** draft for the **Buyur Design System**. I structured it to work for **both design and development teams**, including **token hierarchy, usage guidelines, and theming**. It aligns with the JSON structure you uploaded (alias / primitive / semantic) and supports **Light and Dark modes**.
+
+
+
+***
+
+## **1. Overview**
+
+The **Buyur color system** is designed to provide a **scalable, mode-aware, and semantic** foundation for all products. It consists of three layers:
+
+- **Primitives** – Core raw color values (e.g., neutral50, primary600).
+
+- **Semantic alias tokens** – Contextual colors mapped to usage (e.g., backgroundPrimary, textMuted).
+
+- **Component tokens** – Specific color usage for UI components (e.g., button.primary.background).
+
+This structure ensures flexibility when updating themes and brand colors without breaking component-level tokens.
+
+## **2. Color Token Hierarchy**
+
+### **2.1 Primitive Tokens**
+
+- **Purpose:** Unnamed raw color values forming the foundation.
+
+- **Examples:**
+
+  - byr.primitive.color.neutral.neutral50 = #FFFFFF
+
+  - byr.primitive.color.primary.primary600 = #029062
+
+### **2.2 Semantic Alias Tokens**
+
+- **Purpose:** Meaningful names for functional use (background, text, borders).
+
+- **Examples:**
+
+  - backgroundPrimary – Primary background surfaces
+
+  - textMuted – Less prominent text color
+
+
+
+### **2.3 Component Tokens**
+
+- **Purpose:** Directly linked to specific UI components.
+
+- **Examples:**
+
+  - button.primary.background = backgroundPrimary
+
+  - badge.warning.border = borderWarning
+
+  **3. Theming (Light & Dark Modes)**
+
+The Buyur color system supports **two modes**:
+
+- **Light Mode** – Optimized for readability and minimal eye strain in bright conditions.
+
+- **Dark Mode** – Optimized for low-light environments, maintaining contrast and accessibility.
+
+## **4. Color Categories**
+
+### **4.1 Background Colors**
+
+Used for surfaces and containers.
+
+**Examples:**
+
+- background.background – Base surface
+
+- background.backgroundElevated – Cards, modals
+
+- background.backgroundPrimary – Brand-related areas
+
+- background.backgroundDisabled – Disabled state backgrounds
+
+### **4.2 Text Colors**
+
+Used for content and labels.
+
+**Examples:**
+
+- text.text – Default text
+
+- text.textMuted – Subtle labels
+
+- text.textOnPrimary – Text on brand-colored surfaces
+
+- text.textInverted – Text on inverted surfaces
+
+### **4.3 Border Colors**
+
+Used for outlines and dividers.
+
+**Examples:**
+
+
+
+- border.border – Default borders
+
+- border.borderSubtle – Soft dividers
+
+- border.borderError – Error state outlines
+
+### **4.4 Surface Colors**
+
+Used for overlays, muted areas, and elevated elements.
+
+**Examples:**
+
+- surface.surface – Base neutral surface
+
+- surface.surfaceMuted – Muted overlays
+
+- surface.surfaceElevated – Elevated UI cards
+
+### **4.5 Base Colors**
+
+Raw white/black tokens used for core backgrounds or text.
+
+## **5. Color Usage Guidelines**
+
+- **Accessibility:** Minimum AA contrast for text (4.5:1) and AAA for key interactions.
+
+- **Consistency:** Use semantic tokens instead of hardcoded primitives in components.
+
+- **Scalability:** Add new colors at the primitive level, then map to alias tokens.
+
+- **Branding:** Primary and secondary colors are configurable per product theme.
+
+
+
+
+
+## **6. Example Implementation (JSON)**
+
+```
+{
+  "Alias": {
+    "modes": {
+      "Light": {
+        "byr": {
+          "alias": {
+            "colors": {
+              "background": {
+                "background": { "$value": "{byr.primitive.color.neutral.neutral50}" },
+                "backgroundPrimary": { "$value": "{byr.primitive.color.primary.primary600}" },
+                "backgroundDisabled": { "$value": "#A7AEBC" }
+              },
+              "text": {
+                "text": { "$value": "{byr.primitive.color.neutral.neutral700}" },
+                "textMuted": { "$value": "{byr.primitive.color.neutral.neutral600}" },
+                "textOnPrimary": { "$value": "#FFDAFF" }
+              },
+              "border": {
+                "border": { "$value": "#A7AEBC" },
+                "borderError": { "$value": "{byr.primitive.color.error.error500}" }
+              },
+              "surface": {
+                "surface": { "$value": "{byr.primitive.color.surface.surface50}" },
+                "surfaceElevated": { "$value": "{byr.primitive.color.surface.surface200}" }
+              },
+              "base": {
+                "white": { "$value": "#FFFFFF" },
+                "black": { "$value": "#141414" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+
+
+## **7. Color Palette Example (Light Mode)**
+
+| **Token**             | **Hex** | **Usage**             |
+| --------------------- | ------- | --------------------- |
+| background.background | #FFFFFF | Base background       |
+| backgroundPrimary     | #029062 | Primary brand surface |
+| text.text             | #333333 | Default text color    |
+| textMuted             | #5C717E | Secondary text color  |
+| border.border         | #A7AEBC | Default border        |
+| surface.surface       | #F4F6F7 | Neutral surface       |
