@@ -5,38 +5,34 @@ slug: /
 
 # Introduction
 
-It's time to launch your documentation! Welcome to [Dhub](https://dhub.dev)'s open-source documentation template.
+### **Buyur Design System**
 
-:::info
-[Dhub](https://dhub.dev) is a collaborative WYSIWYG editor for Docusaurus that enables both technical and non-technical users to efficiently and easily create and edit Docusaurus Markdown content.
-:::
+**Buyur** is a unified design system created to ensure **consistency, scalability, and accessibility** across all digital products in the Buyur ecosystem. It provides a **single source of truth** for design tokens, components, and interaction patterns, enabling teams to build faster and maintain cohesive user experiences across **web and mobile platforms**.
 
-![](/img/rocket.webp)
 
-## Get started
 
-Here's a couple of tips to get you started with [Dhub](https://dhub.dev):
+The system is grounded in **human‑centered design principles**, focusing on clarity, inclusivity, and performance. It leverages **semantic token architecture** and a **mode‑aware theming approach** (Light and Dark) to support flexible brand expression while preserving usability.
 
-1. Remember that everything on this page is editable (assuming you're in the editor). Type `/` to open the command menu and add images, code blocks and other components.
 
-2. With [Dhub](https://dhub.dev), you own your code. Click the `Push GitHub` button to create a GitHub repository for your project.
 
-3. You can deploy your project to the web using [Vercel](https://vercel.com) or [Netlify](https://netlify.com) for free. Here are tutorials on how to deploy to [Vercel](https://vercel.com/guides/deploying-docusaurus-with-vercel) and to [Netlify](https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/). Alternatively, you click the three dots at the top right corner, and then click the `Deloy to Vercel`.
+Key objectives of Buyur Design System:
 
-:::info Preview URL
 
-Here's a link to see how this template looks like when deployed on the Web
 
-[https://template-docusaurus-docs.dhub.dev](https://template-docusaurus-docs.dhub.dev/)
+- Establish a **shared visual language** for designers and developers.
 
-:::
+- Accelerate **product development** through reusable, documented components.
 
-## Docusaurus
+- Ensure **accessibility and responsiveness** across multiple devices.
 
-This template is based on Meta's [Docusaurus](https://docusaurus.io/) framework. Docusaurus is a powerful tool for building content-centric websites, offering features such as translations, versioning, and content search.
+- Provide **scalable theming** for future product expansions.
 
-Explore [Docusaurus' documentation](https://docusaurus.io/docs) to learn more about its capabilities.&#x20;
+- Maintain **design governance** to keep quality and consistency at scale.
 
-## **Need help?**
 
-Need help with a specific use-case or just want to chat about docs? You're very welcome to email us at [hello@dhub.dev](mailto:hello@dhub.dev), [join our Discord](https://discord.gg/6qGnyrt7xy), or send feedback (directly to our Slack) using the `Send feedback` button at the top.&#x20;
+
+
+
+***
+
+&#x20;
