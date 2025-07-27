@@ -1,0 +1,109 @@
+# App Bar
+
+![](/img/appbar.png)
+
+## **Anatomy**
+
+**Elements:**
+
+1. **Status bar** – Shows time, signal, Wi‑Fi, and battery.
+
+2. **Navigation icon** – Back or close button.
+
+3. **Title** – Screen title or input field for search.
+
+4. **Trailing icon 1** – Layout toggle (grid/list).
+
+5. **Trailing icon 2** – Additional actions (optional).
+
+6. **Filter button** – Opens filter menu.
+
+7. **Filter chips** – Sorting options (e.g., Popular).
+
+8. **Input field** – Replaces title in search mode.
+
+9. **Cancel button** – Appears during search to exit mode.
+
+***
+
+## **Properties**
+
+### **Property 1 – Title Type**
+
+- **Large text** – Wishlist (bold heading style).
+
+- **Search** – Input replaces title.
+
+- **Default** – Standard headline text.
+
+### **Property 2 – Trailing Icon 1**
+
+- Grid or list view toggle (optional).
+
+### **Property 3 – Trailing Icon 2**
+
+- Secondary action (optional).
+
+### **Property 4 – Show Filter**
+
+- Displays horizontal filter chips.
+
+### **Property 5 – Show Filter Button**
+
+- Displays filter icon before chips.
+
+### **Property 6 – Show Title**
+
+- Toggles visibility of headline (hidden in search mode).
+
+***
+
+## **Variants**
+
+- **Default** – Title with trailing icons.
+
+- **Wishlist** – Bold title with filter chips below.
+
+- **Search Active** – Input with back/cancel controls.
+
+- **Filter Mode** – Filter button + chips visible.
+
+***
+
+## **Layout & Spacing**
+
+- **Height:** 56px app bar + 44px status bar.
+
+- **Padding:** 16px horizontal, 8px between icons.
+
+- **Spacing between title & actions:** 24px min.
+
+- **Filter chips row:** 48px below app bar.
+
+***
+
+## **Behavior**
+
+- **Back arrow:** Navigates to previous screen.
+
+- **Trailing actions:** Toggle layouts or open menus.
+
+- **Search input:** Replaces title on focus.
+
+- **Cancel (Bağla):** Clears search and restores title.
+
+- **Scroll behavior:** Optional elevation/shadow on scroll.
+
+***
+
+## **Usage Guidelines**
+
+- Always show title or search field (never empty state).
+
+- Limit trailing icons to 2 actions for clarity.
+
+- Use bold title for primary screens (e.g., Wishlist).
+
+- Display filter chips only if sorting options are available.
+
+- Ensure tap targets meet 44px accessibility minimum.
