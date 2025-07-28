@@ -1,109 +1,73 @@
-# App Bar
+# AppBar
 
-![](/img/appbar.png)
+![](/img/99shots_so.png)
 
-## **Anatomy**
+## Description
 
-**Elements:**
-
-1. **Status bar** – Shows time, signal, Wi‑Fi, and battery.
-
-2. **Navigation icon** – Back or close button.
-
-3. **Title** – Screen title or input field for search.
-
-4. **Trailing icon 1** – Layout toggle (grid/list).
-
-5. **Trailing icon 2** – Additional actions (optional).
-
-6. **Filter button** – Opens filter menu.
-
-7. **Filter chips** – Sorting options (e.g., Popular).
-
-8. **Input field** – Replaces title in search mode.
-
-9. **Cancel button** – Appears during search to exit mode.
+The App Bar is a top-level navigation and contextual information component. It provides page titles, back navigation, filtering, and optional trailing actions (e.g., search or settings). It ensures consistent navigation patterns across the application and improves user orientation.
 
 ***
 
-## **Properties**
+## Variants & states
 
-### **Property 1 – Title Type**
+### Variants
 
-- **Large text** – Wishlist (bold heading style).
+- **Default:** Basic title with optional filter buttons.
 
-- **Search** – Input replaces title.
+- **Large text:** Prominent page title variant.
 
-- **Default** – Standard headline text.
+- **Search / search alternative:** Replaces the title with a search input field.
 
-### **Property 2 – Trailing Icon 1**
+- **Trailing icon 1 / 2:** Includes one or two action icons on the right side.
 
-- Grid or list view toggle (optional).
+- **Show filter button:** Includes filter toggle button.
 
-### **Property 3 – Trailing Icon 2**
+- **Show title with input:** Combines title and inline input field.
 
-- Secondary action (optional).
+### States
 
-### **Property 4 – Show Filter**
+- **Default state:** Idle, showing standard page context.
 
-- Displays horizontal filter chips.
+- **Scrolled state:** Compact appearance after content scroll.
 
-### **Property 5 – Show Filter Button**
-
-- Displays filter icon before chips.
-
-### **Property 6 – Show Title**
-
-- Toggles visibility of headline (hidden in search mode).
+- **Active filter state:** Highlighted filter button when active.
 
 ***
 
-## **Variants**
+## Anatomy
 
-- **Default** – Title with trailing icons.
+![](/img/app_anatomy.png)
 
-- **Wishlist** – Bold title with filter chips below.
+Key elements:
 
-- **Search Active** – Input with back/cancel controls.
+1. **Status bar** – Displays system time and indicators.
 
-- **Filter Mode** – Filter button + chips visible.
+2. **Back button** – Navigates to previous screen.
 
-***
+3. **Page title** – Indicates current screen.
 
-## **Layout & Spacing**
+4. **Search field** – Optional input replacing title.
 
-- **Height:** 56px app bar + 44px status bar.
+5. **Filter buttons** – Quick filter dropdowns or toggles.
 
-- **Padding:** 16px horizontal, 8px between icons.
-
-- **Spacing between title & actions:** 24px min.
-
-- **Filter chips row:** 48px below app bar.
+6. **Trailing actions** – Optional actions (e.g., settings, close).
 
 ***
 
-## **Behavior**
+## Usage guidelines
 
-- **Back arrow:** Navigates to previous screen.
+### Do ✅
 
-- **Trailing actions:** Toggle layouts or open menus.
+- Keep the title short and descriptive of the page.
 
-- **Search input:** Replaces title on focus.
+- Use back button only when there is a valid previous context.
 
-- **Cancel (Bağla):** Clears search and restores title.
+- Apply filters consistently for content-driven pages.
 
-- **Scroll behavior:** Optional elevation/shadow on scroll.
+### Don’t ❌
 
-***
+- Avoid placing too many actions in the App Bar (limit to 2-3).
 
-## **Usage Guidelines**
+- Don’t allow titles to wrap to multiple lines (truncate instead).
 
-- Always show title or search field (never empty state).
-
-- Limit trailing icons to 2 actions for clarity.
-
-- Use bold title for primary screens (e.g., Wishlist).
-
-- Display filter chips only if sorting options are available.
-
-- Ensure tap targets meet 44px accessibility minimum.
+- Avoid inconsistent spacing between filters and trailing icons.
