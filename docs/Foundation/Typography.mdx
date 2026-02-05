@@ -49,7 +49,7 @@ Typography is organized into semantic levels corresponding to functional roles:
 Typography tokens follow this naming convention:
 
 ```
-dhub.typography.[category].[level].[property]
+byr.typography.[category].[level].[property]
 
 ```
 
@@ -61,7 +61,7 @@ dhub.typography.[category].[level].[property]
 
 ***
 
-## **Title Styles (Sample based on Buyur values)**
+## **Title Styles**
 
 | **Style** | **Font Size** | **Line Height** | **Weight**    | **Letter Spacing** |
 | --------- | ------------- | --------------- | ------------- | ------------------ |
@@ -125,4 +125,47 @@ dhub.typography.[category].[level].[property]
 
 - **Body** – For content text and paragraphs
 
-- **Tiny / Micro** – For metadata, captions, and helper text
+- **Tiny / Micro** – For metadata, captions, and helper text\
+
+
+
+
+Here’s the **text size and usage guidelines** for the Car Rental Card component:
+
+
+
+***
+
+## **Text Sizes**
+
+| **Element**     | **Font size** | **Font weight** | **Style**                                                |
+| --------------- | ------------- | --------------- | -------------------------------------------------------- |
+| **Promo label** | 14px          | SemiBold        | All caps or bold highlight (e.g., “Limited Time Offers”) |
+| **Car name**    | 16px          | Medium or Bold  | Primary title (e.g., “BMW M8 Coupe”)                     |
+| **Sub-label**   | 14px          | Regular         | Secondary text (e.g., “or similar”)                      |
+| **Price**       | 16px          | SemiBold        | Emphasis on pricing (e.g., “135 ₼ /day”)                 |
+| **Meta info**   | 12px–14px     | Regular         | (e.g., time, location, transport type)                   |
+
+## **Usage Guidelines**
+
+### **Do ✅**
+
+- Use consistent font sizes across all car cards.
+
+- Maintain clear hierarchy between the car name and “or similar” subtext.
+
+- Emphasize price using bold or semi-bold styling.
+
+- Use truncation or wrapping for long car names (max 2 lines).
+
+- Use left-aligned or center-aligned text based on card layout (grid vs carousel).
+
+### **Don’t ❌**
+
+- Don’t mix font weights or styles inconsistently across cards.
+
+- Don’t display pricing without currency or duration.
+
+- Don’t stack more than two lines of text in compact card variants.
+
+- Avoid scaling down text sizes below 12px for accessibility.
